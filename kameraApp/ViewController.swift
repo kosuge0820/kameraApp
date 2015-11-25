@@ -8,7 +8,7 @@
 
 import UIKit
 import AssetsLibrary
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
