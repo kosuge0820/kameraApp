@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC917431BFC60EF0002CB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917421BFC60EF0002CB65 /* AppDelegate.swift */; };
+		FCC917451BFC60EF0002CB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917441BFC60EF0002CB65 /* ViewController.swift */; };
+		FCC917481BFC60EF0002CB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC917461BFC60EF0002CB65 /* Main.storyboard */; };
+		FCC9174A1BFC60EF0002CB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC917491BFC60EF0002CB65 /* Assets.xcassets */; };
+		FCC9174D1BFC60EF0002CB65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC9174B1BFC60EF0002CB65 /* LaunchScreen.storyboard */; };
+		FCC917581BFC60EF0002CB65 /* kameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917571BFC60EF0002CB65 /* kameraAppTests.swift */; };
+		FCC917631BFC60EF0002CB65 /* kameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917621BFC60EF0002CB65 /* kameraAppUITests.swift */; };
+		FCC917711BFC6E220002CB65 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917701BFC6E220002CB65 /* SubmitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC917541BFC60EF0002CB65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC917371BFC60EE0002CB65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC9173E1BFC60EE0002CB65;
+			remoteInfo = kameraApp;
+		};
+		FCC9175F1BFC60EF0002CB65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC917371BFC60EE0002CB65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC9173E1BFC60EE0002CB65;
+			remoteInfo = kameraApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCC9173F1BFC60EF0002CB65 /* kameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC917421BFC60EF0002CB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCC917441BFC60EF0002CB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCC917471BFC60EF0002CB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCC917491BFC60EF0002CB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC9174C1BFC60EF0002CB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCC9174E1BFC60EF0002CB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC917531BFC60EF0002CB65 /* kameraAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kameraAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC917571BFC60EF0002CB65 /* kameraAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kameraAppTests.swift; sourceTree = "<group>"; };
+		FCC917591BFC60EF0002CB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC9175E1BFC60EF0002CB65 /* kameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC917621BFC60EF0002CB65 /* kameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kameraAppUITests.swift; sourceTree = "<group>"; };
+		FCC917641BFC60EF0002CB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC917701BFC6E220002CB65 /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC9173C1BFC60EE0002CB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC917501BFC60EF0002CB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC9175B1BFC60EF0002CB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCC917361BFC60EE0002CB65 = {
+			isa = PBXGroup;
+			children = (
+				FCC917411BFC60EF0002CB65 /* kameraApp */,
+				FCC917561BFC60EF0002CB65 /* kameraAppTests */,
+				FCC917611BFC60EF0002CB65 /* kameraAppUITests */,
+				FCC917401BFC60EF0002CB65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC917401BFC60EF0002CB65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC9173F1BFC60EF0002CB65 /* kameraApp.app */,
+				FCC917531BFC60EF0002CB65 /* kameraAppTests.xctest */,
+				FCC9175E1BFC60EF0002CB65 /* kameraAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC917411BFC60EF0002CB65 /* kameraApp */ = {
+			isa = PBXGroup;
+			children = (
+				FCC917421BFC60EF0002CB65 /* AppDelegate.swift */,
+				FCC917441BFC60EF0002CB65 /* ViewController.swift */,
+				FCC917701BFC6E220002CB65 /* SubmitViewController.swift */,
+				FCC917461BFC60EF0002CB65 /* Main.storyboard */,
+				FCC917491BFC60EF0002CB65 /* Assets.xcassets */,
+				FCC9174B1BFC60EF0002CB65 /* LaunchScreen.storyboard */,
+				FCC9174E1BFC60EF0002CB65 /* Info.plist */,
+			);
+			path = kameraApp;
+			sourceTree = "<group>";
+		};
+		FCC917561BFC60EF0002CB65 /* kameraAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC917571BFC60EF0002CB65 /* kameraAppTests.swift */,
+				FCC917591BFC60EF0002CB65 /* Info.plist */,
+			);
+			path = kameraAppTests;
+			sourceTree = "<group>";
+		};
+		FCC917611BFC60EF0002CB65 /* kameraAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC917621BFC60EF0002CB65 /* kameraAppUITests.swift */,
+				FCC917641BFC60EF0002CB65 /* Info.plist */,
+			);
+			path = kameraAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC9173E1BFC60EE0002CB65 /* kameraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC917671BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraApp" */;
+			buildPhases = (
+				FCC9173B1BFC60EE0002CB65 /* Sources */,
+				FCC9173C1BFC60EE0002CB65 /* Frameworks */,
+				FCC9173D1BFC60EE0002CB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kameraApp;
+			productName = kameraApp;
+			productReference = FCC9173F1BFC60EF0002CB65 /* kameraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC917521BFC60EF0002CB65 /* kameraAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC9176A1BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraAppTests" */;
+			buildPhases = (
+				FCC9174F1BFC60EF0002CB65 /* Sources */,
+				FCC917501BFC60EF0002CB65 /* Frameworks */,
+				FCC917511BFC60EF0002CB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC917551BFC60EF0002CB65 /* PBXTargetDependency */,
+			);
+			name = kameraAppTests;
+			productName = kameraAppTests;
+			productReference = FCC917531BFC60EF0002CB65 /* kameraAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCC9175D1BFC60EF0002CB65 /* kameraAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC9176D1BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraAppUITests" */;
+			buildPhases = (
+				FCC9175A1BFC60EF0002CB65 /* Sources */,
+				FCC9175B1BFC60EF0002CB65 /* Frameworks */,
+				FCC9175C1BFC60EF0002CB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC917601BFC60EF0002CB65 /* PBXTargetDependency */,
+			);
+			name = kameraAppUITests;
+			productName = kameraAppUITests;
+			productReference = FCC9175E1BFC60EF0002CB65 /* kameraAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC917371BFC60EE0002CB65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "kosuge satoshi";
+				TargetAttributes = {
+					FCC9173E1BFC60EE0002CB65 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CP25A76AWV;
+					};
+					FCC917521BFC60EF0002CB65 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CP25A76AWV;
+						TestTargetID = FCC9173E1BFC60EE0002CB65;
+					};
+					FCC9175D1BFC60EF0002CB65 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CP25A76AWV;
+						TestTargetID = FCC9173E1BFC60EE0002CB65;
+					};
+				};
+			};
+			buildConfigurationList = FCC9173A1BFC60EE0002CB65 /* Build configuration list for PBXProject "kameraApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCC917361BFC60EE0002CB65;
+			productRefGroup = FCC917401BFC60EF0002CB65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC9173E1BFC60EE0002CB65 /* kameraApp */,
+				FCC917521BFC60EF0002CB65 /* kameraAppTests */,
+				FCC9175D1BFC60EF0002CB65 /* kameraAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC9173D1BFC60EE0002CB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC9174D1BFC60EF0002CB65 /* LaunchScreen.storyboard in Resources */,
+				FCC9174A1BFC60EF0002CB65 /* Assets.xcassets in Resources */,
+				FCC917481BFC60EF0002CB65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC917511BFC60EF0002CB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC9175C1BFC60EF0002CB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC9173B1BFC60EE0002CB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC917451BFC60EF0002CB65 /* ViewController.swift in Sources */,
+				FCC917711BFC6E220002CB65 /* SubmitViewController.swift in Sources */,
+				FCC917431BFC60EF0002CB65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC9174F1BFC60EF0002CB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC917581BFC60EF0002CB65 /* kameraAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC9175A1BFC60EF0002CB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC917631BFC60EF0002CB65 /* kameraAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCC917551BFC60EF0002CB65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC9173E1BFC60EE0002CB65 /* kameraApp */;
+			targetProxy = FCC917541BFC60EF0002CB65 /* PBXContainerItemProxy */;
+		};
+		FCC917601BFC60EF0002CB65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC9173E1BFC60EE0002CB65 /* kameraApp */;
+			targetProxy = FCC9175F1BFC60EF0002CB65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCC917461BFC60EF0002CB65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC917471BFC60EF0002CB65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC9174B1BFC60EF0002CB65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC9174C1BFC60EF0002CB65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCC917651BFC60EF0002CB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCC917661BFC60EF0002CB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC917681BFC60EF0002CB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kameraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCC917691BFC60EF0002CB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kameraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCC9176B1BFC60EF0002CB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kameraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kameraApp.app/kameraApp";
+			};
+			name = Debug;
+		};
+		FCC9176C1BFC60EF0002CB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kameraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kameraApp.app/kameraApp";
+			};
+			name = Release;
+		};
+		FCC9176E1BFC60EF0002CB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kameraAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kameraApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FCC9176F1BFC60EF0002CB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kameraAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "we-b.satoshi.kameraAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kameraApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC9173A1BFC60EE0002CB65 /* Build configuration list for PBXProject "kameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC917651BFC60EF0002CB65 /* Debug */,
+				FCC917661BFC60EF0002CB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC917671BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC917681BFC60EF0002CB65 /* Debug */,
+				FCC917691BFC60EF0002CB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCC9176A1BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC9176B1BFC60EF0002CB65 /* Debug */,
+				FCC9176C1BFC60EF0002CB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCC9176D1BFC60EF0002CB65 /* Build configuration list for PBXNativeTarget "kameraAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC9176E1BFC60EF0002CB65 /* Debug */,
+				FCC9176F1BFC60EF0002CB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCC917371BFC60EE0002CB65 /* Project object */;
+}
