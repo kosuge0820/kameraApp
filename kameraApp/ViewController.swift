@@ -8,11 +8,20 @@
 
 import UIKit
 import AssetsLibrary
-final class ViewController: UIViewController {
 
+final class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    var imageStock = ImageStock.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
     }
     
@@ -30,5 +39,20 @@ final class ViewController: UIViewController {
         performSegueWithIdentifier("submit", sender: nil)
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 30
+    }
+
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        
+        
+//        let collectionImage = cell.viewWithTag(1) as! UIImageView
+        //        cell.  = UIImage(named:images[indexPath.item])
+        return cell
+    }
+    
+
 }
+
 
