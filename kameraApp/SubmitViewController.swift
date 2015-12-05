@@ -33,7 +33,6 @@ class SubmitViewController: UIViewController,UIImagePickerControllerDelegate,UIN
 
         self.view.addSubview(selectButton)
         
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -47,14 +46,23 @@ class SubmitViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     }
     
     func saveButton(sender:UIButton){
-        print("move")
+        if photoImage.image == nil{
         
+            let alertView = UIAlertController(title: "アラート" , message:"imageが選択されていません" , preferredStyle: UIAlertControllerStyle.Alert)
+            let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
+                (action:UIAlertAction!) -> Void in
+            })
+            
+            alertView.addAction(alertAction)
+            self.presentViewController(alertView, animated: true, completion: nil)
+            
+            
+        } else {
         imageStock.images.append(photoImage.image!)
+        print(imageStock.images)
         dismissViewControllerAnimated(true, completion: nil)
-//        navigationController?.popToRootViewControllerAnimated(true)
+        }
         
-        //        追加参照
-//        articleStock.myArticles.append(image)
     }
     
     func selectButton(sender:UIButton){
@@ -76,6 +84,7 @@ class SubmitViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     
         photoImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        print("イメージを選択しました")
         self.dismissViewControllerAnimated(true, completion: nil)
 //ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 //          infoの中には取得した画像のデータや色々データが格納されている。辞書型

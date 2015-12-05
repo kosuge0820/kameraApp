@@ -11,6 +11,7 @@ import UIKit
 class ImageStock: NSObject {
     static let sharedInstance = ImageStock()
     var images: [UIImage] = []
+    
 }
 
 
