@@ -14,6 +14,7 @@ final class ViewController: UIViewController,UICollectionViewDelegate,UICollecti
     @IBOutlet weak var collectionView: UICollectionView!
     
     var imageStock = ImageStock.sharedInstance
+
     
     
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ final class ViewController: UIViewController,UICollectionViewDelegate,UICollecti
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,16 +50,13 @@ final class ViewController: UIViewController,UICollectionViewDelegate,UICollecti
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
         
         let collectionImage = UIImageView()
-        collectionImage.frame = CGRect(x: 0 , y: 0 , width: 187, height: 187 )
+        collectionImage.frame = CGRect(x: 0 , y: 0 , width: 140, height: 140 )
         let images = imageStock.images
-//        collectionImage.image = UIImage(named: images[indexPath.item])
         collectionImage.image = images[indexPath.item]
         cell.addSubview(collectionImage)
 
         return cell
     }
-    
-
 }
 
 
