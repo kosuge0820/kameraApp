@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC68A4691C0977B200280944 /* ImageStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68A4681C0977B200280944 /* ImageStock.swift */; };
-		FCBD19471C08A4ED00021A87 /* burger-731298__180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCBD19461C08A4ED00021A87 /* burger-731298__180.jpg */; };
 		FCC917431BFC60EF0002CB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917421BFC60EF0002CB65 /* AppDelegate.swift */; };
 		FCC917451BFC60EF0002CB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917441BFC60EF0002CB65 /* ViewController.swift */; };
 		FCC917481BFC60EF0002CB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC917461BFC60EF0002CB65 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		FC68A4681C0977B200280944 /* ImageStock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStock.swift; sourceTree = "<group>"; };
-		FCBD19461C08A4ED00021A87 /* burger-731298__180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "burger-731298__180.jpg"; path = "../../IOS-projects/application/trend/trend/burger-731298__180.jpg"; sourceTree = "<group>"; };
 		FCC9173F1BFC60EF0002CB65 /* kameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC917421BFC60EF0002CB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC917441BFC60EF0002CB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				FCC917701BFC6E220002CB65 /* SubmitViewController.swift */,
 				FC68A46A1C098E2C00280944 /* model */,
 				FCC917461BFC60EF0002CB65 /* Main.storyboard */,
-				FCBD19461C08A4ED00021A87 /* burger-731298__180.jpg */,
 				FCC917491BFC60EF0002CB65 /* Assets.xcassets */,
 				FCC9174B1BFC60EF0002CB65 /* LaunchScreen.storyboard */,
 				FCC9174E1BFC60EF0002CB65 /* Info.plist */,
@@ -251,7 +248,6 @@
 			files = (
 				FCC9174D1BFC60EF0002CB65 /* LaunchScreen.storyboard in Resources */,
 				FCC9174A1BFC60EF0002CB65 /* Assets.xcassets in Resources */,
-				FCBD19471C08A4ED00021A87 /* burger-731298__180.jpg in Resources */,
 				FCC917481BFC60EF0002CB65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
