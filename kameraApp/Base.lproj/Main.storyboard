@@ -8,7 +8,7 @@
         <!--カメラロール-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="kameraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,12 +16,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k2W-Qg-30B">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="0.60697412299100417" blue="0.52864365176128647" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="mt6-fG-2ER">
+                                    <size key="itemSize" width="187" height="187"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xYo-ZB-hbD">
+                                        <rect key="frame" x="0.0" y="64" width="187" height="187"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.97240777769649578" green="0.93698749364294709" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k2W-Qg-30B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Gj-ki-vPs"/>
+                            <constraint firstItem="k2W-Qg-30B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eyF-lD-d1K"/>
+                            <constraint firstAttribute="trailing" secondItem="k2W-Qg-30B" secondAttribute="trailing" id="nfr-ZV-TgM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k2W-Qg-30B" secondAttribute="bottom" id="qYw-ky-zot"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="カメラロール" id="Rkv-o9-dZh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="gfj-qI-lYc" kind="presentation" identifier="submit" id="d0a-Fq-48G"/>
+                        <outlet property="collectionView" destination="k2W-Qg-30B" id="yxc-AG-6a0"/>
+                        <segue destination="5dv-B3-WQ4" kind="show" identifier="submit" id="8cl-p9-pmx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,11 +76,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="ph6-41-HOC"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-ZL-hEN">
-                                <rect key="frame" x="203" y="423" width="81" height="70"/>
-                                <state key="normal" title="Select"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.95445912462325577" green="0.99132326446713082" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.96256599076687965" green="1" blue="0.95287576116855643" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-eM-afx">
                                 <rect key="frame" x="67" y="171" width="240" height="229"/>
@@ -57,8 +88,16 @@
                                     <constraint firstAttribute="height" constant="229" id="sBF-V6-28T"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-ZL-hEN">
+                                <rect key="frame" x="203" y="423" width="81" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" red="0.96256599080000005" green="1" blue="0.95287576119999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" red="0.98184835091220046" green="1" blue="0.97693248656013021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.45792272319999999" blue="0.42124574650000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rgG-eM-afx" secondAttribute="trailing" constant="68" id="3Xs-HT-odF"/>
                             <constraint firstAttribute="trailing" secondItem="Whp-ZL-hEN" secondAttribute="trailing" constant="91" id="6Ew-mW-Ums"/>
@@ -82,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1I-8Y-amQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538.5" y="305.5"/>
+            <point key="canvasLocation" x="1573.5" y="305.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c7r-sh-ZJn">
@@ -93,7 +132,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9R-7q-n3X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.44557152802347011" green="1" blue="0.46979531913473715" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.75795284785228145" green="1" blue="0.57484379849543243" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -105,24 +144,24 @@
             <point key="canvasLocation" x="282.5" y="305.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="iOy-tG-qHM">
+        <scene sceneID="o0j-PD-NqY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gfj-qI-lYc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5dv-B3-WQ4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OHc-ON-sTc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oOG-u7-4ib">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.44557152799999999" green="1" blue="0.4697953191" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.79537928813020864" green="1" blue="0.65700086960333937" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2di-B3-1aw" kind="presentation" id="uR8-Q8-COg"/>
+                        <segue destination="2di-B3-1aw" kind="relationship" relationship="rootViewController" id="jgq-gY-rWM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5rA-af-PS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bka-jb-H6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121.5" y="305.5"/>
+            <point key="canvasLocation" x="1154.5" y="305.5"/>
         </scene>
     </scenes>
 </document>
