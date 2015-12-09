@@ -9,7 +9,7 @@
 import UIKit
 import AssetsLibrary
 
-class SubmitViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+final class SubmitViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var photoImage: UIImageView!

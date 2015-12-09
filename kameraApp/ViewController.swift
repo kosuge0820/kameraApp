@@ -9,7 +9,7 @@
 import UIKit
 import AssetsLibrary
 
-final class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+final class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
