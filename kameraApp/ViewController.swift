@@ -8,17 +8,28 @@
 
 import UIKit
 import AssetsLibrary
-class ViewController: UIViewController {
 
+final class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var imageStock = ImageStock.sharedInstance
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
         
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController!.navigationBar.tintColor = UIColor.redColor()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: UIBarButtonItemStyle.Plain, target: self, action: "submitView")
+        collectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,5 +41,24 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("submit", sender: nil)
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageStock.images.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        
+        let collectionImage = UIImageView()
+        collectionImage.frame = CGRect(x: 0 , y: 0 , width: 187, height: 187 )
+        let images = imageStock.images
+//        collectionImage.image = UIImage(named: images[indexPath.item])
+        collectionImage.image = images[indexPath.item]
+        cell.addSubview(collectionImage)
+
+        return cell
+    }
+    
+
 }
+
 
