@@ -55,8 +55,6 @@ final class SubmitViewController: UIViewController, UIImagePickerControllerDeleg
             
             alertView.addAction(alertAction)
             self.presentViewController(alertView, animated: true, completion: nil)
-            
-            
         } else {
         imageStock.images.append(photoImage.image!)
         print(imageStock.images)
@@ -71,33 +69,28 @@ final class SubmitViewController: UIViewController, UIImagePickerControllerDeleg
             imagePickerController.delegate = self
             imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(imagePickerController, animated: true, completion: nil)
-//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
 //            UIImagePickerController　カメラ画像や写真アルバムを表示するクラス
 //            UIImagePickerControllerSourceType.PhotoLibrary　写真アルバムから取得す
 //            UIImagePickerControllerSourceType.Camera        カメラで撮影して取得する
 //            UIImagePickerControllerSourceType.SavedPhotosAlbum　写真アルバム内のカメラロールから取得する
-//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
         }
-        
-        
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     
         photoImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        print("イメージを選択しました")
         self.dismissViewControllerAnimated(true, completion: nil)
-//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
 //          infoの中には取得した画像のデータや色々データが格納されている。辞書型
 //          UIImagePickerControllerOriginalImage   オリジナルの画像を取得する
 //          UIImagePickerControllerCropRect        ユーザーが大きさを変更した後の画像を取得する
 //          UIImagePickerControllerMediaMetadata　　撮影時刻や撮影場所などのメタデータを取得する
 //　　       dismissViewControllerAnimated(true, completion: nil)モーダルビューコントロラーを非表示にするメソッド　引数のcompletionには非表示になった後の処理をおこなう
 //            UIImageWriteToSavedPhotosAlbum(photoImage,nil, nil, nil)画像を写真アルバムに保存する関数一つ目はUIimage画像を指定する。２〜４はその後の処理
-//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
     }
     
     func toBackViewController(){
-    //showで遷移した画面から元の画面に戻るメソッド　popToRootViewControllerAnimated
        dismissViewControllerAnimated(true, completion: nil)
     }
     

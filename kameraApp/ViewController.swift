@@ -22,8 +22,6 @@ final class ViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -51,7 +49,6 @@ final class ViewController: UIViewController, UICollectionViewDelegate, UICollec
         let collectionImage = UIImageView()
         collectionImage.frame = CGRect(x: 0 , y: 0 , width: 187, height: 187 )
         let images = imageStock.images
-//        collectionImage.image = UIImage(named: images[indexPath.item])
         collectionImage.image = images[indexPath.item]
         cell.addSubview(collectionImage)
 

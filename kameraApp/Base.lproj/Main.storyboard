@@ -89,7 +89,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-ZL-hEN">
-                                <rect key="frame" x="203" y="423" width="81" height="70"/>
+                                <rect key="frame" x="203" y="423" width="109" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" red="0.96256599080000005" green="1" blue="0.95287576119999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Select">
@@ -100,7 +100,7 @@
                         <color key="backgroundColor" red="1" green="0.45792272319999999" blue="0.42124574650000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rgG-eM-afx" secondAttribute="trailing" constant="68" id="3Xs-HT-odF"/>
-                            <constraint firstAttribute="trailing" secondItem="Whp-ZL-hEN" secondAttribute="trailing" constant="91" id="6Ew-mW-Ums"/>
+                            <constraint firstAttribute="trailing" secondItem="Whp-ZL-hEN" secondAttribute="trailing" constant="63" id="6Ew-mW-Ums"/>
                             <constraint firstItem="B75-hd-s86" firstAttribute="top" secondItem="qLo-Kt-ySp" secondAttribute="bottom" constant="179" id="6jL-mA-Qqz"/>
                             <constraint firstItem="Whp-ZL-hEN" firstAttribute="top" secondItem="rgG-eM-afx" secondAttribute="bottom" constant="23" id="DKf-oB-7af"/>
                             <constraint firstItem="qLo-Kt-ySp" firstAttribute="leading" secondItem="SDA-pl-Wa3" secondAttribute="leading" constant="79" id="Raf-wP-FMd"/>
