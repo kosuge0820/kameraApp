@@ -18,8 +18,6 @@ final class CollectionViewController: UIViewController, UICollectionViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         collectionView.delegate = self
         collectionView.dataSource = self
     }
