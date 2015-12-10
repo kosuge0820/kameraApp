@@ -46,6 +46,7 @@ final class SubmitViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     func saveButton(sender:UIButton){
+        print("asdas")
         if photoImage.image == nil{
         
             let alertView = UIAlertController(title: "アラート" , message:"imageが選択されていません" , preferredStyle: UIAlertControllerStyle.Alert)

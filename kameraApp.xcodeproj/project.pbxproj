@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC68A4691C0977B200280944 /* ImageStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68A4681C0977B200280944 /* ImageStock.swift */; };
 		FCC917431BFC60EF0002CB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917421BFC60EF0002CB65 /* AppDelegate.swift */; };
-		FCC917451BFC60EF0002CB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917441BFC60EF0002CB65 /* ViewController.swift */; };
+		FCC917451BFC60EF0002CB65 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC917441BFC60EF0002CB65 /* CollectionViewController.swift */; };
 		FCC917481BFC60EF0002CB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC917461BFC60EF0002CB65 /* Main.storyboard */; };
 		FCC9174A1BFC60EF0002CB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC917491BFC60EF0002CB65 /* Assets.xcassets */; };
 		FCC9174D1BFC60EF0002CB65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC9174B1BFC60EF0002CB65 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		FC68A4681C0977B200280944 /* ImageStock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStock.swift; sourceTree = "<group>"; };
 		FCC9173F1BFC60EF0002CB65 /* kameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC917421BFC60EF0002CB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCC917441BFC60EF0002CB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCC917441BFC60EF0002CB65 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FCC917471BFC60EF0002CB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCC917491BFC60EF0002CB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCC9174C1BFC60EF0002CB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC917421BFC60EF0002CB65 /* AppDelegate.swift */,
-				FCC917441BFC60EF0002CB65 /* ViewController.swift */,
+				FCC917441BFC60EF0002CB65 /* CollectionViewController.swift */,
 				FCC917701BFC6E220002CB65 /* SubmitViewController.swift */,
 				FC68A46A1C098E2C00280944 /* model */,
 				FCC917461BFC60EF0002CB65 /* Main.storyboard */,
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC917451BFC60EF0002CB65 /* ViewController.swift in Sources */,
+				FCC917451BFC60EF0002CB65 /* CollectionViewController.swift in Sources */,
 				FCC917711BFC6E220002CB65 /* SubmitViewController.swift in Sources */,
 				FCC917431BFC60EF0002CB65 /* AppDelegate.swift in Sources */,
 				FC68A4691C0977B200280944 /* ImageStock.swift in Sources */,

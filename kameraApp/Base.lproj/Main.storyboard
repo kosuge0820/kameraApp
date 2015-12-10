@@ -8,7 +8,7 @@
         <!--カメラロール-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="kameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="CollectionViewController" customModule="kameraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -71,25 +71,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLo-Kt-ySp">
-                                <rect key="frame" x="79" y="423" width="83" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="ph6-41-HOC"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLo-Kt-ySp">
+                                <rect key="frame" x="51" y="423" width="111" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" red="0.95445912462325577" green="0.99132326446713082" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.96256599076687965" green="1" blue="0.95287576116855643" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.67984970914829224" green="0.76908201475420068" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-eM-afx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-eM-afx">
                                 <rect key="frame" x="67" y="171" width="240" height="229"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="229" id="sBF-V6-28T"/>
-                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-ZL-hEN">
-                                <rect key="frame" x="203" y="423" width="109" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-ZL-hEN">
+                                <rect key="frame" x="203" y="423" width="124" height="83.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" red="0.96256599080000005" green="1" blue="0.95287576119999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Select">
@@ -98,18 +92,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.45792272319999999" blue="0.42124574650000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="rgG-eM-afx" secondAttribute="trailing" constant="68" id="3Xs-HT-odF"/>
-                            <constraint firstAttribute="trailing" secondItem="Whp-ZL-hEN" secondAttribute="trailing" constant="63" id="6Ew-mW-Ums"/>
-                            <constraint firstItem="B75-hd-s86" firstAttribute="top" secondItem="qLo-Kt-ySp" secondAttribute="bottom" constant="179" id="6jL-mA-Qqz"/>
-                            <constraint firstItem="Whp-ZL-hEN" firstAttribute="top" secondItem="rgG-eM-afx" secondAttribute="bottom" constant="23" id="DKf-oB-7af"/>
-                            <constraint firstItem="qLo-Kt-ySp" firstAttribute="leading" secondItem="SDA-pl-Wa3" secondAttribute="leading" constant="79" id="Raf-wP-FMd"/>
-                            <constraint firstItem="rgG-eM-afx" firstAttribute="top" secondItem="aUz-2r-uTy" secondAttribute="bottom" constant="107" id="ZFB-79-Vnr"/>
-                            <constraint firstItem="Whp-ZL-hEN" firstAttribute="leading" secondItem="qLo-Kt-ySp" secondAttribute="trailing" constant="41" id="dlt-m4-KMn"/>
-                            <constraint firstItem="qLo-Kt-ySp" firstAttribute="top" secondItem="rgG-eM-afx" secondAttribute="bottom" constant="23" id="eAs-ga-Avu"/>
-                            <constraint firstItem="rgG-eM-afx" firstAttribute="leading" secondItem="SDA-pl-Wa3" secondAttribute="leading" constant="67" id="g5F-wA-Dxd"/>
-                            <constraint firstItem="B75-hd-s86" firstAttribute="top" secondItem="Whp-ZL-hEN" secondAttribute="bottom" constant="174" id="iD6-86-Urw"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="submit" id="lf8-de-76X"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
