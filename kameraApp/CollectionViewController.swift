@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AssetsLibrary
 
 final class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -24,16 +23,11 @@ final class CollectionViewController: UIViewController, UICollectionViewDelegate
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController!.navigationBar.tintColor = UIColor.redColor()
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: UIBarButtonItemStyle.Plain, target: self, action: "submitView")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: .Plain, target: self, action: "transitToPostViewController")
         collectionView.reloadData()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func submitView(){
+    func transitToPostViewController(){
         performSegueWithIdentifier("submit", sender: nil)
     }
     
@@ -45,15 +39,13 @@ final class CollectionViewController: UIViewController, UICollectionViewDelegate
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
         
         let collectionImage = UIImageView()
-        collectionImage.frame = CGRect(x: 0 , y: 0 , width: 187, height: 187 )
+        collectionImage.frame.origin = CGPointZero
+        collectionImage.frame.size = CGSize(width: 187, height: 187)
         let images = imageStock.images
         collectionImage.image = images[indexPath.item]
         cell.addSubview(collectionImage)
-
         return cell
     }
-    
-
 }
 
 

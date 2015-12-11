@@ -19,39 +19,31 @@ final class SubmitViewController: UIViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        saveButton.setTitle("save", forState: UIControlState.Normal)
-        saveButton.addTarget(self, action: "saveButton:", forControlEvents: UIControlEvents.TouchUpInside)
+        saveButton.setTitle("save", forState: .Normal)
         saveButton.center = self.view.center
-        saveButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        saveButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Selected)
+        saveButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        saveButton.setTitleColor(UIColor.blackColor(), forState: .Selected)
+        saveButton.addTarget(self, action: "saveButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(saveButton)
         
-        selectButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        selectButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Selected)
-        selectButton.setTitle("select", forState: UIControlState.Normal)
-        selectButton.addTarget(self, action: "selectButton:", forControlEvents: UIControlEvents.TouchUpInside)
-
+        selectButton.setTitle("select", forState: .Normal)
+        selectButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        selectButton.setTitleColor(UIColor.blackColor(), forState: .Selected)
+        selectButton.addTarget(self, action: "selectButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(selectButton)
-        
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController!.navigationBar.tintColor = UIColor.redColor()
-        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "toBackViewController")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
-    func saveButton(sender:UIButton){
-        print("asdas")
+    func saveButton(sender:UIButton) {
         if photoImage.image == nil{
         
             let alertView = UIAlertController(title: "アラート" , message:"imageが選択されていません" , preferredStyle: UIAlertControllerStyle.Alert)
-            let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
-                (action:UIAlertAction!) -> Void in
+            let alertAction = UIAlertAction(title: "OK", style: .Default, handler: {
+                (action: UIAlertAction!) -> Void in
             })
             
             alertView.addAction(alertAction)
@@ -61,34 +53,21 @@ final class SubmitViewController: UIViewController, UIImagePickerControllerDeleg
         print(imageStock.images)
         dismissViewControllerAnimated(true, completion: nil)
         }
-        
     }
     
-    func selectButton(sender:UIButton){
+    func selectButton(sender:UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
             let imagePickerController = UIImagePickerController()
             imagePickerController.delegate = self
-            imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            imagePickerController.sourceType = .PhotoLibrary
             self.presentViewController(imagePickerController, animated: true, completion: nil)
-
-//            UIImagePickerController　カメラ画像や写真アルバムを表示するクラス
-//            UIImagePickerControllerSourceType.PhotoLibrary　写真アルバムから取得す
-//            UIImagePickerControllerSourceType.Camera        カメラで撮影して取得する
-//            UIImagePickerControllerSourceType.SavedPhotosAlbum　写真アルバム内のカメラロールから取得する
         }
     }
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     
         photoImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         self.dismissViewControllerAnimated(true, completion: nil)
-
-//          infoの中には取得した画像のデータや色々データが格納されている。辞書型
-//          UIImagePickerControllerOriginalImage   オリジナルの画像を取得する
-//          UIImagePickerControllerCropRect        ユーザーが大きさを変更した後の画像を取得する
-//          UIImagePickerControllerMediaMetadata　　撮影時刻や撮影場所などのメタデータを取得する
-//　　       dismissViewControllerAnimated(true, completion: nil)モーダルビューコントロラーを非表示にするメソッド　引数のcompletionには非表示になった後の処理をおこなう
-//            UIImageWriteToSavedPhotosAlbum(photoImage,nil, nil, nil)画像を写真アルバムに保存する関数一つ目はUIimage画像を指定する。２〜４はその後の処理
-
     }
     
     func toBackViewController(){

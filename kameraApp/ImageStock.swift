@@ -11,17 +11,5 @@ import UIKit
 class ImageStock: NSObject {
     static let sharedInstance = ImageStock()
     var images: [UIImage] = []
-    
 }
 
-
-//---
-//
-//static let sharedInstance = ArticleStocks()
-//var myArticles: Array<Article> = []
-//
-//func addArticleStocks(article: Article) {
-//    self.myArticles.insert(article, atIndex: 0)
-//}
-//
-//}
